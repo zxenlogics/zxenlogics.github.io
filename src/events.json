@@ -111,12 +111,12 @@
 	},
     {
         "Name": "Tour de Bronx",
-        "Date": "September 00, 2018",
+        "Date": "October 00, 2018",
         "Location": {
             "state": "NY",
             "city": "Bronx"
         },
-        "WebsiteUrl": "",
+        "WebsiteUrl": "http://www.ilovethebronx.com/index.php/happenings/tour-de-bronx",
         "RegisterUrl": "",
         "IsActive": true
 	}					
