@@ -42,5 +42,16 @@
         "WebsiteUrl": "https://www.hbcli.org/gold_coast_tour",
         "RegisterUrl": "https://www.active.com/greenlawn-ny/cycling/gold-coast-tour-2018",
         "IsActive": true
-    }
+	},
+    {
+        "Name": "ZTrek",
+        "Date": "July 28, 2018",
+        "Location": {
+            "state": "NJ",
+            "city": "Somerset"
+        },
+        "WebsiteUrl": "http://www.ztrek.org/?utm_source=active.com&utm_campaign=ztrek-2017&utm_medium=website",
+        "RegisterUrl": "https://www.active.com/somerset-nj/cycling/ztrek-one-day-cycling-event-2018?int=19N-DP120-BND10-SD100-DM10-eventsnearyouwidget-pos1",
+        "IsActive": true
+    }	
 ]
