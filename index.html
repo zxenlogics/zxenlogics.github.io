@@ -14,36 +14,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link rel="stylesheet" href="./src/css/site.css">
+
+    <style>
+        .panel {
+            width: 100%;
+            height: 1000px;
+            margin:0;
+            padding:0;
+            background-color:#8a2be2;
+            transition: background-color 2s linear;
+        }
+
+        .panel.fade {
+            background-color: #fafafa;
+        }
+    </style>
 </head>
 <body>
+ <div class='panel'></div>
 
-<div class="container" style="background-color:blueviolet">
-            <h3 style="display:none">Summer 2018 Cycling Events</h3>
-
-
-    <div class="row" style="display:none">
-
-        <div class="card orange lighten-3 z-depth-3">
-                <div class="card-content black-text">
-                    <a href="./src/index.htm">
-                        RIDE ON...<i class="material-icons large">motorcycle</i>
-                    </a>
-                </div>
-
-        </div>        
-
-    </div>
-
-
-
-</div>   
-
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src=".src/js/build/bundle.js"></script>
-    <script>
-        window.location = "./src/index.htm";
+    <script> 
+        var p = document.querySelector('.panel');
+        //p.classList.add('fade');
+        setTimeout(() => {window.location = "./src/index.htm";}, 900);
+        
     </script>
 
 </body>
