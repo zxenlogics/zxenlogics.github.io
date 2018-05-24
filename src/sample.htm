@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>zXen's Time Machine</title>
+    <title>Denzil's Summer Sportifs</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
@@ -13,26 +13,14 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="./src/css/site.css">
+    <link rel="stylesheet" href="./css/site.css">
 </head>
 <body>
 
-<div class="container" style="background-color:blueviolet">
-            <h3 style="display:none">Summer 2018 Cycling Events</h3>
-
-
-    <div class="row" style="display:none">
-
-        <div class="card orange lighten-3 z-depth-3">
-                <div class="card-content black-text">
-                    <a href="./src/index.htm">
-                        RIDE ON...<i class="material-icons large">motorcycle</i>
-                    </a>
-                </div>
-
-        </div>        
-
-    </div>
+<div class="container">
+    <div id="app">
+        {{ message }}
+      </div>
 
 
 
@@ -41,10 +29,19 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src=".src/js/build/bundle.js"></script>
-    <script>
-        window.location = "./src/index.htm";
-    </script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script src="./js/build/bundle.js"></script>
+
+<script>
+
+    var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+</script>
+
 
 </body>
 </html>

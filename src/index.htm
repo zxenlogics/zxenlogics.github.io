@@ -18,60 +18,91 @@
 <body>
 
 <div class="container">
-            <h3>Summer 2018 Cycling Events</h3>
-
-
-    <div class="row">
-
-        <div class="col s12 m6 l6">
-            <div class="card blue-grey lighten-2 z-depth-4">
-                <div class="card-content white-text">
-                    <span class="card-title">Bloomin Metric</span>
-                    May 20, 2018
-                </div>
-                <div class="card-action">
-                    <a href="https://www.bloominmetric.com/" target="_blank">Website</a>
-                    <a href="https://www.bloominmetric.com/" target="_blank">Register</a>
-                </div>
-            </div>    
-        </div>
-
-        <div class="col s12 m6 l6">
-                <div class="card grey z-depth-4">
-                    <div class="card-content white-text">
-                        <span class="card-title">Nassau to Suffolk</span>
-                            June 24, 2018
-                    </div>
-                    <div class="card-action">
-                        <a href="https://www.n2sbc.org/" target="_blank">Website</a>
-                        <a href="https://www.bloominmetric.com/" target="_blank">Register</a>
-                    </div>
-                </div>    
-            </div>   
+    <div id="app">
+            <h3>{{title}}</h3>
             
-            <div class="col s12 m6 l6">
-                    <div class="card teal z-depth-4">
+            <ul>
+                <li v-for="event in rides">
+                <div class="col s12 m6 l6">
+                    <div v-bind:class="[ event.IsActive ? 'blue-grey' : 'grey' ]" class="card lighten-2 z-depth-1">                    
                         <div class="card-content white-text">
-                            <span class="card-title">Gold Goast Tour</span>
-                            July 15, 2018
+                            <span class="card-title">{{event.Name}}</span>
+                            {{event.Date}}
                         </div>
                         <div class="card-action">
-                            <a href="https://www.n2sbc.org/" target="_blank">Website</a>
-                            <a href="https://www.bloominmetric.com/" target="_blank">Register</a>
+                            <a v-bind:href="event.website" target="_blank">Website</a>
+                            <a v-bind:href="event.register" target="_blank">Register</a>
                         </div>
                     </div>    
-                </div>             
-
+                </div>
+            </li>
+        </ul>   
+           
     </div>
-
-
 
 </div>   
 
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
     <script src="./js/build/bundle.js"></script>
+
+    <script>
+        //import eventsData from './js/build/bundle';
+        var app = new Vue({
+                el: '#app',
+                data: {
+                    title: 'Summer 2018 Rides',
+                    rides: [
+                                {
+                                    "Name": "Bloomin Metric",
+                                    "Date": "May 20, 2018",
+                                    "Location": {
+                                        "state": "NY",
+                                        "city": "Long Island"
+                                    },
+                                    "WebsiteUrl": "https://www.bloominmetric.com/",
+                                    "RegisterUrl": "https://www.bloominmetric.com/",
+                                    "IsActive": false
+                                },
+                                {
+                                    "Name": "Nassau to Suffolk",
+                                    "Date": "June 24, 2018",
+                                    "Location": {
+                                        "state": "NY",
+                                        "city": "Long Island"
+                                    },
+                                    "WebsiteUrl": "https://www.n2sbc.org/",
+                                    "RegisterUrl": "https://www.n2sbc.org/",
+                                    "IsActive": true
+                                },
+                                {
+                                    "Name": "Discover Hudson Valley Ride",
+                                    "Date": "June 24, 2018",
+                                    "Location": {
+                                        "state": "NY",
+                                        "city": "Poughkeepsie"
+                                    },
+                                    "WebsiteUrl": "https://www.bike.nyc/events/discover-hudson-valley-ride/",
+                                    "RegisterUrl": "",
+                                    "IsActive": true
+                                },
+                                {
+                                    "Name": "Gold Goast Tour",
+                                    "Date": "July 15, 2018",
+                                    "Location": {
+                                        "state": "NY",
+                                        "city": "Long Island"
+                                    },
+                                    "WebsiteUrl": "https://www.hbcli.org/gold_coast_tour",
+                                    "RegisterUrl": "https://www.active.com/greenlawn-ny/cycling/gold-coast-tour-2018",
+                                    "IsActive": true
+                                }
+                            ]
+                }
+            });
+    </script>    
 
 </body>
 </html>

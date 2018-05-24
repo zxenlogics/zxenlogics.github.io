@@ -31,5 +31,10 @@ let getRides = () => {
     return `Here are the ${data[0].ride} of ${year}`;
 }
 
-console.log(getRides());
-console.log(`here is the data ${JSON.stringify(data, null, 2)}`);
+var getEvents = () => {
+	return data;
+}
+
+//export { getEvents }
+//console.log(getRides());
+//console.log(`here is the data ${JSON.stringify(data, null, 2)}`);

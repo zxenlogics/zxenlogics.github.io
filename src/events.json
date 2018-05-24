@@ -1,0 +1,46 @@
+[
+    {
+        "Name": "Bloomin Metric",
+        "Date": "May 20, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "Long Island"
+        },
+        "WebsiteUrl": "https://www.bloominmetric.com/",
+        "RegisterUrl": "https://www.bloominmetric.com/",
+        "IsActive": true
+    },
+    {
+        "Name": "Nassau to Suffolk",
+        "Date": "June 24, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "Long Island"
+        },
+        "WebsiteUrl": "https://www.n2sbc.org/",
+        "RegisterUrl": "https://www.n2sbc.org/",
+        "IsActive": true
+    },
+    {
+        "Name": "Discover Hudson Valley Ride",
+        "Date": "June 24, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "Poughkeepsie"
+        },
+        "WebsiteUrl": "https://www.bike.nyc/events/discover-hudson-valley-ride/",
+        "RegisterUrl": "",
+        "IsActive": true
+    },
+    {
+        "Name": "Gold Goast Tour",
+        "Date": "July 15, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "Long Island"
+        },
+        "WebsiteUrl": "https://www.hbcli.org/gold_coast_tour",
+        "RegisterUrl": "https://www.active.com/greenlawn-ny/cycling/gold-coast-tour-2018",
+        "IsActive": true
+    }
+]
