@@ -53,5 +53,61 @@
         "WebsiteUrl": "http://www.ztrek.org/?utm_source=active.com&utm_campaign=ztrek-2017&utm_medium=website",
         "RegisterUrl": "https://www.active.com/somerset-nj/cycling/ztrek-one-day-cycling-event-2018?int=19N-DP120-BND10-SD100-DM10-eventsnearyouwidget-pos1",
         "IsActive": true
-    }	
+	},
+    {
+        "Name": "Ramapo Rally",
+        "Date": "August 19, 2018",
+        "Location": {
+            "state": "NJ",
+            "city": "Ramapo"
+        },
+        "WebsiteUrl": "http://ramaporally.btcnj.com/",
+        "RegisterUrl": "",
+        "IsActive": true
+	},
+    {
+        "Name": "NYC Century",
+        "Date": "September 9, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "NY"
+        },
+        "WebsiteUrl": "https://biketours.transalt.org/nyccentury",
+        "RegisterUrl": "",
+        "IsActive": true
+	},
+    {
+        "Name": "Escape New York",
+        "Date": "September 22, 2018",
+        "Location": {
+            "state": "NJ",
+            "city": ""
+        },
+        "WebsiteUrl": "https://www.enynycc.org/",
+        "RegisterUrl": "",
+        "IsActive": true
+	},
+    {
+        "Name": "Tour of the Hamptons",
+        "Date": "September 23, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "Long Island"
+        },
+        "WebsiteUrl": "http://www.massparkbikeclub.org/tour-of-the-hamptons-2018/",
+        "RegisterUrl": "",
+        "IsActive": true
+	},
+    {
+        "Name": "Tour de Bronx",
+        "Date": "September 00, 2018",
+        "Location": {
+            "state": "NY",
+            "city": "Bronx"
+        },
+        "WebsiteUrl": "",
+        "RegisterUrl": "",
+        "IsActive": true
+	}					
+		
 ]
