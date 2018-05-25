@@ -8,6 +8,17 @@
         },
         "WebsiteUrl": "https://www.bloominmetric.com/",
         "RegisterUrl": "https://www.bloominmetric.com/",
+        "IsActive": false
+	},
+	{
+        "Name": "Highlands Gran Fondo",
+        "Date": "June 3, 2018",
+        "Location": {
+            "state": "NJ",
+            "city": "Butler"
+        },
+        "WebsiteUrl": "https://www.granfondonationalseries.com/gran-fondo-highlands/",
+        "RegisterUrl": "https://www.bikereg.com/highlands-gfns",
         "IsActive": true
     },
     {
