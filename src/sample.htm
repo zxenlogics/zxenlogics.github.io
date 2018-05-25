@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Denzil's Summer Sportifs</title>
+    <title>Summer Rides</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="./images/favicon.png" type="image/png">
 
     <link rel="stylesheet" href="./css/site.css">
 </head>
@@ -19,10 +20,26 @@
 
 <div class="container">
     <div id="app">
-        {{ message }}
-      </div>
-
-
+            <h3>{{title}}</h3>
+            
+            <ul>
+                <li v-for="event in rides">
+                <div class="col s12 m6 l6">
+                    <div v-bind:class="[ event.IsActive ? 'blue-grey' : 'grey' ]" class="card lighten-2 z-depth-1">                    
+                        <div class="card-content white-text">
+                            <span class="card-title">{{event.Name}}</span>
+                            {{event.Date}}
+                        </div>
+                        <div class="card-action">
+                            <a v-bind:href="event.WebsiteUrl" target="_blank">Website</a>
+                            <a v-bind:href="event.RegisterUrl" target="_blank">Register</a>
+                        </div>
+                    </div>    
+                </div>
+            </li>
+        </ul>   
+           
+    </div>
 
 </div>   
 
@@ -32,16 +49,28 @@
     <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
     <script src="./js/build/bundle.js"></script>
 
-<script>
-
-    var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-</script>
-
+    <script>
+        //import eventsData from './js/build/bundle';
+        var app = new Vue({
+                el: '#app',
+                data: {
+                    title: 'Summer 2018 Rides',
+                    rides: []
+                },
+                mounted() {
+                        fetch("https://zxenlogics.github.io/src/events.json")
+                        .then(response => {
+                            return response.json();                            
+                        })
+                        .then(events => {
+                            events.forEach(event => {
+                                this.rides = events;
+                                //console.log(event);
+                            });
+                        });
+                    }
+            });
+    </script>    
 
 </body>
 </html>
