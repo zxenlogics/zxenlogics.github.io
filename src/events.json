@@ -76,6 +76,17 @@
         "RegisterUrl": "",
         "IsActive": true
 	},
+	{
+        "Name": "NCC Mount Greylock - Hillclimb Time Trial",
+        "Date": "September 8, 2018",
+        "Location": {
+            "state": "MA",
+            "city": "North Adams"
+        },
+        "WebsiteUrl": "http://greylocktt.nohobikeclub.org/",
+        "RegisterUrl": "",
+        "IsActive": true
+	},
     {
         "Name": "NYC Century",
         "Date": "September 9, 2018",
