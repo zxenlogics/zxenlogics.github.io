@@ -1,5 +1,6 @@
 [
     {
+        "Id" : "",
         "Name": "Bloomin Metric",
         "Date": "May 20, 2018",
         "Location": {
@@ -11,6 +12,7 @@
         "IsActive": false
 	},
 	{
+        "Id" : "",
         "Name": "Highlands Gran Fondo",
         "Date": "June 3, 2018",
         "Location": {
@@ -22,6 +24,7 @@
         "IsActive": true
     },
     {
+        "Id" : "",
         "Name": "Nassau to Suffolk",
         "Date": "June 24, 2018",
         "Location": {
@@ -33,6 +36,7 @@
         "IsActive": true
     },
     {
+        "Id" : "",
         "Name": "Discover Hudson Valley Ride",
         "Date": "June 24, 2018",
         "Location": {
@@ -44,6 +48,7 @@
         "IsActive": true
     },
     {
+        "Id" : "",
         "Name": "Gold Goast Tour",
         "Date": "July 15, 2018",
         "Location": {
@@ -55,6 +60,7 @@
         "IsActive": true
 	},
     {
+        "Id" : "",
         "Name": "ZTrek",
         "Date": "July 28, 2018",
         "Location": {
@@ -66,6 +72,7 @@
         "IsActive": true
 	},
     {
+        "Id" : "",
         "Name": "Ramapo Rally",
         "Date": "August 19, 2018",
         "Location": {
@@ -77,6 +84,7 @@
         "IsActive": true
 	},
 	{
+        "Id" : "",
         "Name": "NCC Mount Greylock - Hillclimb Time Trial",
         "Date": "September 8, 2018",
         "Location": {
@@ -88,6 +96,7 @@
         "IsActive": true
 	},
     {
+        "Id" : "",
         "Name": "NYC Century",
         "Date": "September 9, 2018",
         "Location": {
@@ -99,6 +108,7 @@
         "IsActive": true
 	},
     {
+        "Id" : "",
         "Name": "Gran Fondo NJ",
         "Date": "September 9, 2018",
         "Location": {
@@ -110,6 +120,7 @@
         "IsActive": true
 	},	
     {
+        "Id" : "",
         "Name": "Escape New York",
         "Date": "September 22, 2018",
         "Location": {
@@ -121,6 +132,7 @@
         "IsActive": true
 	},
     {
+        "Id" : "",
         "Name": "Tour of the Hamptons",
         "Date": "September 23, 2018",
         "Location": {
@@ -132,6 +144,7 @@
         "IsActive": true
 	},
     {
+        "Id" : "",
         "Name": "Tour de Bronx",
         "Date": "October 00, 2018",
         "Location": {
