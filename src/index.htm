@@ -35,6 +35,7 @@
                     <div v-bind:class="[ event.IsActive ? 'blue-grey' : 'grey' ]" class="card lighten-2 z-depth-1">                    
                         <div class="card-content white-text">
                             <span class="card-title">{{event.Name}}</span>
+                            <span class="favorite z-dept-1" v-if="event.IsFavorite"><i class="material-icons red-text">favorite</i></span>
                             <p>{{event.Date}}</p>
                             <p>
                                 <i class="material-icons lime-text">group</i> {{event.Riders}}

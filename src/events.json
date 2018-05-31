@@ -29,6 +29,7 @@
         "Date": "June 24, 2018",
         "Riders" : 3,
         "TargetMiles" : 66,
+        "IsFavorite" : true,
         "Location": {
             "state": "NY",
             "city": "Long Island"
