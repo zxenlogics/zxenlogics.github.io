@@ -1,40 +1,29 @@
-'use strict';
+import { onReady } from './utils';
+import { getEvents } from './utils';
 
-//import data from './data';
+onReady(function () {
+	// var elems = document.querySelectorAll('.tooltipped');
+	// var instances = M.Tooltip.init(elems, options);
 
-var data = [
-	{ 
-		"ride": "Bloomin Metric",
-		"date": "May 20, 2018",
-		"website": "https://www.bloominmetric.com/",
-		"register" : "https://www.bloominmetric.com/"
-    },
-	{ 
-		"ride": "Nassau to Suffolk",
-		"date": "June 24, 2018",
-		"website": "https://www.n2sbc.org/",
-		"register" : "https://www.n2sbc.org/"
-    },    
-    {
-		"ride": "Gold Goast Tour",
-		"date": "July 15, 2018",
-		"website": "https://www.hbcli.org/gold_coast_tour",
-		"register" : "https://www.active.com/greenlawn-ny/cycling/gold-coast-tour-2018"        
-    }
-];
+	console.log('[onReady]');
+});
 
-
-let getRides = () => {
-    let ride = 'Summer sportifs';
-    let year = '2018';
-
-    return `Here are the ${data[0].ride} of ${year}`;
-}
-
-var getEvents = () => {
-	return data;
-}
-
-//export { getEvents }
-//console.log(getRides());
-//console.log(`here is the data ${JSON.stringify(data, null, 2)}`);
+var app = new Vue({
+	el: '#app',
+	data: {
+		title: 'Summer 2018 Rides',
+		rides: []
+	},
+	mounted() {
+			// fetch("https://zxenlogics.github.io/src/events.json")
+			// .then(response => {
+			// 	return response.json();                            
+			// })
+			getEvents()
+			.then(events => {
+				events.forEach(event => {
+					this.rides.push(event);
+				});
+			});
+		}
+});
