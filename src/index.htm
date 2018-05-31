@@ -17,11 +17,17 @@
     <link rel="stylesheet" href="./css/site.css">
 </head>
 <body>
-
+<div class="banner z-depth-2">
+    <div class="container">
+        <span class='title'>Summer 2018 Rides</span>
+        <span class='version'>v0.2</span>
+    </div>        
+</div>
 <div class="container">
+    
     <div id="app">
-            <h3>{{title}}</h3>
-            <span class='version'>v0.2</span>
+            <!-- <h3>{{title}}</h3> -->
+            <!-- <span class='version'>v0.2</span> -->
             
             <ul>
                 <li v-for="event in rides">
@@ -29,7 +35,11 @@
                     <div v-bind:class="[ event.IsActive ? 'blue-grey' : 'grey' ]" class="card lighten-2 z-depth-1">                    
                         <div class="card-content white-text">
                             <span class="card-title">{{event.Name}}</span>
-                            {{event.Date}}
+                            <p>{{event.Date}}</p>
+                            <p>
+                                <i class="material-icons lime-text">group</i> {{event.Riders}}
+                            </p>
+                            <p><i class="material-icons blue-text">directions_bike</i> {{event.Miles}} miles</p>
                         </div>
                         <div class="card-action">
                             <a v-bind:href="event.WebsiteUrl" target="_blank">Website</a>

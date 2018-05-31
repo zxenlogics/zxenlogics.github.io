@@ -1,3 +1,13 @@
-h1, h2, h3 {
-    color: burlywood;
+.version {
+    color: #888;
+    font-size: 75%;
+}
+.banner {
+    background-color: darkkhaki;
+    padding: 5px 0;
+}
+.banner .title {
+    font-size: 30px;
+    color: honeydew;
+    margin-right: 10px;
 }
