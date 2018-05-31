@@ -38,8 +38,8 @@
                             <span class="favorite z-dept-1" v-if="event.IsFavorite"><i class="material-icons red-text">favorite</i></span>
                             <p>{{event.Date}}</p>
                             <div v-if="event.Riders" class="attendance z-depth-2 grey darken-2">
-                                <p><i class="material-icons lime-text">group</i> {{event.Riders}}</p>                            
-                                <p><i class="material-icons blue-text">directions_bike</i> {{event.TargetMiles}} miles</p>
+                                <p><i class="material-icons lime-text" title="Riders">group</i> {{event.Riders}}</p>                            
+                                <p><i class="material-icons blue-text" title="Target Miles">directions_bike</i> {{event.TargetMiles}} miles</p>
                             </div>
                         </div>
                         <div class="card-action">
