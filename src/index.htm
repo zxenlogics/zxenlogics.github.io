@@ -37,10 +37,10 @@
                             <span class="card-title">{{event.Name}}</span>
                             <span class="favorite z-dept-1" v-if="event.IsFavorite"><i class="material-icons red-text">favorite</i></span>
                             <p>{{event.Date}}</p>
-                            <p>
-                                <i class="material-icons lime-text">group</i> {{event.Riders}}
-                            </p>
-                            <p><i class="material-icons blue-text">directions_bike</i> {{event.TargetMiles}} miles</p>
+                            <div v-if="event.Riders" class="attendance z-depth-2 grey darken-2">
+                                <p><i class="material-icons lime-text">group</i> {{event.Riders}}</p>                            
+                                <p><i class="material-icons blue-text">directions_bike</i> {{event.TargetMiles}} miles</p>
+                            </div>
                         </div>
                         <div class="card-action">
                             <a v-bind:href="event.WebsiteUrl" target="_blank">Website</a>
