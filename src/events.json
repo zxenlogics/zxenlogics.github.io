@@ -54,6 +54,7 @@
         "Id" : "",
         "Name": "Gold Goast Tour",
         "Date": "July 15, 2018",
+        "IsFavorite" : true,
         "Location": {
             "state": "NY",
             "city": "Long Island"
@@ -78,6 +79,7 @@
         "Id" : "",
         "Name": "Ramapo Rally",
         "Date": "August 19, 2018",
+        "IsFavorite" : true,
         "Location": {
             "state": "NJ",
             "city": "Ramapo"
@@ -126,6 +128,7 @@
         "Id" : "",
         "Name": "Escape New York",
         "Date": "September 22, 2018",
+        "IsFavorite" : true,
         "Location": {
             "state": "NJ",
             "city": ""
@@ -138,6 +141,7 @@
         "Id" : "",
         "Name": "Tour of the Hamptons",
         "Date": "September 23, 2018",
+        "IsFavorite" : true,
         "Location": {
             "state": "NY",
             "city": "Long Island"
@@ -150,6 +154,7 @@
         "Id" : "",
         "Name": "Tour de Bronx",
         "Date": "October 00, 2018",
+        "IsFavorite" : true,
         "Location": {
             "state": "NY",
             "city": "Bronx"
