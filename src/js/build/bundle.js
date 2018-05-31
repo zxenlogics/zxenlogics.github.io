@@ -71,6 +71,52 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./js/src/appSettings.js":
+/*!*******************************!*\
+  !*** ./js/src/appSettings.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var appSettings = function () {
+
+    var config = {
+        fadeIn: 600,
+        progressBarErrorClass: 'progress-bar-danger',
+        statusText401: 'Unauthorized',
+        statusText404: 'Not Found',
+        statusText500: 'Internal Server Error',
+        timeOut_30_seconds: 30000
+    };
+
+    var urls = {
+        cyclingEvents: 'https://zxenlogics.github.io/src/events.json'
+
+        /**
+         * @desc Returns a reference to the specified html element
+         */
+    };var elm = {
+        progress: document.querySelector('.progress'),
+        progressBar: document.querySelector('.progress-bar')
+    };
+
+    return {
+        config: config,
+        urls: urls,
+        elm: elm
+    };
+}();
+
+exports.appSettings = appSettings;
+
+/***/ }),
+
 /***/ "./js/src/main.js":
 /*!************************!*\
   !*** ./js/src/main.js ***!
@@ -93,16 +139,11 @@ var _utils = __webpack_require__(/*! ./utils */ "./js/src/utils.js");
 var app = new Vue({
 	el: '#app',
 	data: {
-		title: 'Summer 2018 Rides',
 		rides: []
 	},
 	mounted: function mounted() {
 		var _this = this;
 
-		// fetch("https://zxenlogics.github.io/src/events.json")
-		// .then(response => {
-		// 	return response.json();                            
-		// })
 		(0, _utils.getEvents)().then(function (events) {
 			events.forEach(function (event) {
 				_this.rides.push(event);
@@ -128,6 +169,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.onReady = onReady;
 exports.getEvents = getEvents;
+
+var _appSettings = __webpack_require__(/*! ./appSettings */ "./js/src/appSettings.js");
+
 /**
  * @desc Pure js alternative to the jQuery.ready function
  * @param {any} fn Function to execute on DOM loaded
@@ -142,7 +186,7 @@ function onReady(fn) {
 }
 
 function getEvents() {
-  return fetch("https://zxenlogics.github.io/src/events.json").then(function (response) {
+  return fetch(_appSettings.appSettings.urls.cyclingEvents).then(function (response) {
     return response.json();
   });
 }
