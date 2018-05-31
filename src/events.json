@@ -28,7 +28,7 @@
         "Name": "Nassau to Suffolk (N2S)",
         "Date": "June 24, 2018",
         "Riders" : 3,
-        "Miles" : 66,
+        "TargetMiles" : 66,
         "Location": {
             "state": "NY",
             "city": "Long Island"
