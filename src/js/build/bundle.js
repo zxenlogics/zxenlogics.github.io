@@ -117,6 +117,70 @@ exports.appSettings = appSettings;
 
 /***/ }),
 
+/***/ "./js/src/dateBuilder.js":
+/*!*******************************!*\
+  !*** ./js/src/dateBuilder.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var dateBuilder = exports.dateBuilder = function dateBuilder() {
+    var _this = this;
+
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var date = new Date();
+    var locale = "en-us";
+
+    var newDate = function newDate(d) {
+        var parts = d.split('-');
+        date = new Date(parts[0], parts[1] - 1, parts[2]);
+        return this;
+    };
+
+    var today = function today() {
+        date = new Date();
+        return _this;
+    };
+
+    var shortMonth = function shortMonth() {
+        // ref: https://jsfiddle.net/dstorey/Xgerq/
+        return date.toLocaleString(locale, { month: "short" });
+    };
+
+    var longMonth = function longMonth() {
+        // ref: https://jsfiddle.net/dstorey/Xgerq/
+        return date.toLocaleString(locale, { month: "long" });
+    };
+
+    var toString = function toString() {
+        return date.toDateString();;
+    };
+
+    var toLongDateString = function toLongDateString() {
+        var dt = date.getDate();
+        var day = date.getDay();
+        var month = longMonth();
+        var year = date.getFullYear();
+        var dateString = days[day] + ', ' + month + ' ' + dt + ', ' + year;
+        return dateString;
+    };
+
+    return {
+        newDate: newDate,
+        today: today,
+        toString: toString,
+        toLongDateString: toLongDateString
+    };
+};
+
+/***/ }),
+
 /***/ "./js/src/main.js":
 /*!************************!*\
   !*** ./js/src/main.js ***!
@@ -128,6 +192,8 @@ exports.appSettings = appSettings;
 
 
 var _utils = __webpack_require__(/*! ./utils */ "./js/src/utils.js");
+
+var _dateBuilder = __webpack_require__(/*! ./dateBuilder */ "./js/src/dateBuilder.js");
 
 (0, _utils.onReady)(function () {
 	// var elems = document.querySelectorAll('.tooltipped');
@@ -146,6 +212,8 @@ var app = new Vue({
 
 		(0, _utils.getEvents)().then(function (events) {
 			events.forEach(function (event) {
+				event.Date = (0, _dateBuilder.dateBuilder)().newDate(event.Date).toLongDateString();
+				//console.log(event.Date);
 				_this.rides.push(event);
 			});
 		});
@@ -165,7 +233,7 @@ var app = new Vue({
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.onReady = onReady;
 exports.getEvents = getEvents;
@@ -177,18 +245,20 @@ var _appSettings = __webpack_require__(/*! ./appSettings */ "./js/src/appSetting
  * @param {any} fn Function to execute on DOM loaded
  */
 function onReady(fn) {
-  //$(fn);
-  if (document.readyState !== 'loading') {
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
+    //$(fn);
+    if (document.readyState !== 'loading') {
+        fn();
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
 }
 
 function getEvents() {
-  return fetch(_appSettings.appSettings.urls.cyclingEvents).then(function (response) {
-    return response.json();
-  });
+    return fetch(_appSettings.appSettings.urls.cyclingEvents).then(function (response) {
+        return response.json();
+    }).catch(function (e) {
+        console.error('An error occured: ' + e);
+    });
 }
 
 /***/ })

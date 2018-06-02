@@ -1,47 +1,46 @@
 export let dateBuilder = function() {
     let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    let date;
+    let date = new Date();
     let locale = "en-us";
     
-    let newDate = d => {
+    let newDate = function(d) {
         let parts = d.split('-');
-        this.date = new Date(parts[0], parts[1] - 1, parts[2]);   
-      return this;
-    }
+        date = new Date(parts[0], parts[1] - 1, parts[2]);   
+        return this;
+    };
     
     let today = () => {
-        this.date = new Date();
+        date = new Date();
       return this;
-    }
+    };
     
     let shortMonth = () => {
       // ref: https://jsfiddle.net/dstorey/Xgerq/
-      return this.date.toLocaleString(locale, { month: "short"});
-    }
+      return date.toLocaleString(locale, { month: "short"});
+    };
     
     let longMonth = function() {
       // ref: https://jsfiddle.net/dstorey/Xgerq/
-      return this.date.toLocaleString(locale, { month: "long" });
-    }
+      return date.toLocaleString(locale, { month: "long" });
+    };
     
-    let toStrings = function() {    
-        return this.date.toDateString();;
+    let toString = function() {    
+        return date.toDateString();;
     }; 
     
-    this.toLongDateString = function () {
-        let date = this.date.getDate();
-        let day = this.date.getDay();
+    let toLongDateString = function () {
+        let dt = date.getDate();
+        let day = date.getDay();
         let month = longMonth();
-        let year = this.date.getFullYear();
-        let dateString = `${days[day]}, ${month} ${date} ${year}`;
+        let year = date.getFullYear();
+        let dateString = `${days[day]}, ${month} ${dt}, ${year}`;
         return dateString;
-    }
+    };
     
     return {
       newDate: newDate,
       today: today,
-      toStrings: toStrings,
+      toString: toString,
       toLongDateString: toLongDateString
-    }
-    
-  }();
+    }    
+  }
