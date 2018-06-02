@@ -63,6 +63,7 @@
                     <div v-bind:class="[ event.IsActive ? 'blue-grey' : 'grey' ]" class="card lighten-2 z-depth-1">                    
                         <div class="card-content white-text">
                             <span class="card-title">{{event.Name}}</span>
+                            <!-- <span></span>{{isInProgress('2018-06-02')}}</span> -->
                             <span class="favorite z-dept-1" v-if="event.IsFavorite"><i class="material-icons red-text">favorite</i></span>
                             <p>{{event.Date}}</p>
                             <div v-if="event.Riders" class="attendance z-depth-2 grey darken-2">

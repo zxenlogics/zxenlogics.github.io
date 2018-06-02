@@ -171,9 +171,21 @@ var dateBuilder = exports.dateBuilder = function dateBuilder() {
         return dateString;
     };
 
+    var hasPast = function hasPast() {
+        var today = new Date();
+        return date < today;
+    };
+
+    var isToday = function isToday() {
+        var today = new Date();
+        return date === today;
+    };
+
     return {
         newDate: newDate,
         today: today,
+        isToday: isToday,
+        hasPast: hasPast,
         toString: toString,
         toLongDateString: toLongDateString
     };
@@ -207,13 +219,21 @@ var app = new Vue({
 	data: {
 		rides: []
 	},
+	// computed: {
+	// 	isInProgress: function(d) {
+	// 		var t = dateBuilder.newDate(d).isToday();
+	// 		return t ? "is happening today" : "happening in a few days";
+	// 	}
+	// },
 	mounted: function mounted() {
 		var _this = this;
 
 		(0, _utils.getEvents)().then(function (events) {
 			events.forEach(function (event) {
-				event.Date = (0, _dateBuilder.dateBuilder)().newDate(event.Date).toLongDateString();
-				//console.log(event.Date);
+				var db = (0, _dateBuilder.dateBuilder)().newDate(event.Date);
+				event.Date = db.toLongDateString(); //dateBuilder().newDate(event.Date).toLongDateString();
+				event.IsActive = !db.hasPast();
+				//console.log(`event.IsActive = ${db.hasPast()}`);
 				_this.rides.push(event);
 			});
 		});

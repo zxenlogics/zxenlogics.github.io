@@ -14,12 +14,20 @@ var app = new Vue({
 	data: {
 		rides: []
 	},
+	// computed: {
+	// 	isInProgress: function(d) {
+	// 		var t = dateBuilder.newDate(d).isToday();
+	// 		return t ? "is happening today" : "happening in a few days";
+	// 	}
+	// },
 	mounted() {
 			getEvents()
 			.then(events => {
 				events.forEach(event => {
-					event.Date = dateBuilder().newDate(event.Date).toLongDateString();
-					//console.log(event.Date);
+					var db = dateBuilder().newDate(event.Date);
+					event.Date = db.toLongDateString();		//dateBuilder().newDate(event.Date).toLongDateString();
+					event.IsActive = !db.hasPast();
+					//console.log(`event.IsActive = ${db.hasPast()}`);
 					this.rides.push(event);
 				});
 			});

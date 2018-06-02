@@ -36,10 +36,22 @@ export let dateBuilder = function() {
         let dateString = `${days[day]}, ${month} ${dt}, ${year}`;
         return dateString;
     };
+
+    let hasPast = function () {
+        let today = new Date();
+        return  date < today;
+    };
     
+    let isToday = function() {
+        let today = new Date();
+        return  date === today;
+    }
+
     return {
       newDate: newDate,
       today: today,
+      isToday: isToday,
+      hasPast: hasPast,
       toString: toString,
       toLongDateString: toLongDateString
     }    
