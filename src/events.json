@@ -2,31 +2,34 @@
     {
         "Id" : "",
         "Name": "Bloomin Metric",
-        "Date": "May 20, 2018",
+        "Date": "2018-05-20",
+        "IsFavorite" : true,
         "Location": {
             "state": "NY",
             "city": "Long Island"
         },
         "WebsiteUrl": "https://www.bloominmetric.com/",
         "RegisterUrl": "https://www.bloominmetric.com/",
-        "IsActive": false
+        "IsActive": false,
+        "Created" : "2018-05-22"
 	},
 	{
         "Id" : "",
         "Name": "Highlands Gran Fondo",
-        "Date": "June 3, 2018",
+        "Date": "2018-06-03",
         "Location": {
             "state": "NJ",
             "city": "Butler"
         },
         "WebsiteUrl": "https://www.granfondonationalseries.com/gran-fondo-highlands/",
         "RegisterUrl": "https://www.bikereg.com/highlands-gfns",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
     },
     {
         "Id" : "",
         "Name": "Nassau to Suffolk (N2S)",
-        "Date": "June 24, 2018",
+        "Date": "2018-06-24",
         "Riders" : 3,
         "TargetMiles" : 66,
         "IsFavorite" : true,
@@ -36,24 +39,26 @@
         },
         "WebsiteUrl": "https://www.n2sbc.org/",
         "RegisterUrl": "https://www.n2sbc.org/",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
     },
     {
         "Id" : "",
         "Name": "Discover Hudson Valley Ride",
-        "Date": "June 24, 2018",
+        "Date": "2018-06-24",
         "Location": {
             "state": "NY",
             "city": "Poughkeepsie"
         },
         "WebsiteUrl": "https://www.bike.nyc/events/discover-hudson-valley-ride/",
         "RegisterUrl": "",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
     },
     {
         "Id" : "",
         "Name": "Gold Goast Tour",
-        "Date": "July 15, 2018",
+        "Date": "2018-07-15",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
@@ -61,24 +66,26 @@
         },
         "WebsiteUrl": "https://www.hbcli.org/gold_coast_tour",
         "RegisterUrl": "https://www.active.com/greenlawn-ny/cycling/gold-coast-tour-2018",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
     {
         "Id" : "",
         "Name": "ZTrek",
-        "Date": "July 28, 2018",
+        "Date": "2018-07-28",
         "Location": {
             "state": "NJ",
             "city": "Somerset"
         },
         "WebsiteUrl": "http://www.ztrek.org/?utm_source=active.com&utm_campaign=ztrek-2017&utm_medium=website",
         "RegisterUrl": "https://www.active.com/somerset-nj/cycling/ztrek-one-day-cycling-event-2018?int=19N-DP120-BND10-SD100-DM10-eventsnearyouwidget-pos1",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
     {
         "Id" : "",
         "Name": "Ramapo Rally",
-        "Date": "August 19, 2018",
+        "Date": "2018-08-19",
         "IsFavorite" : true,
         "Location": {
             "state": "NJ",
@@ -86,48 +93,52 @@
         },
         "WebsiteUrl": "http://ramaporally.btcnj.com/",
         "RegisterUrl": "",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
 	{
         "Id" : "",
         "Name": "NCC Mount Greylock - Hillclimb Time Trial",
-        "Date": "September 8, 2018",
+        "Date": "2018-09-08",
         "Location": {
             "state": "MA",
             "city": "North Adams"
         },
         "WebsiteUrl": "http://greylocktt.nohobikeclub.org/",
         "RegisterUrl": "",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
     {
         "Id" : "",
         "Name": "NYC Century",
-        "Date": "September 9, 2018",
+        "Date": "2019-09-09",
         "Location": {
             "state": "NY",
             "city": "NY"
         },
         "WebsiteUrl": "https://biketours.transalt.org/nyccentury",
         "RegisterUrl": "",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
     {
         "Id" : "",
         "Name": "Gran Fondo NJ",
-        "Date": "September 9, 2018",
+        "Date": " 2018-09-09",
         "Location": {
             "state": "NJ",
             "city": "Morristown"
         },
         "WebsiteUrl": "https://granfondonj.com/",
         "RegisterUrl": "https://www.eventbrite.com/e/gran-fondo-nj-2018-registration-37128814283",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},	
     {
         "Id" : "",
         "Name": "Escape New York",
-        "Date": "September 22, 2018",
+        "Date": "2018-09-22",
         "IsFavorite" : true,
         "Location": {
             "state": "NJ",
@@ -135,12 +146,13 @@
         },
         "WebsiteUrl": "https://www.enynycc.org/",
         "RegisterUrl": "",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
     {
         "Id" : "",
         "Name": "Tour of the Hamptons",
-        "Date": "September 23, 2018",
+        "Date": "2018-09-23",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
@@ -148,12 +160,13 @@
         },
         "WebsiteUrl": "http://www.massparkbikeclub.org/tour-of-the-hamptons-2018/",
         "RegisterUrl": "",
-        "IsActive": true
+        "IsActive": true,
+        "Created" : "2018-05-22"
 	},
     {
         "Id" : "",
         "Name": "Tour de Bronx",
-        "Date": "October 00, 2018",
+        "Date": "2018-10-00",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
@@ -161,7 +174,7 @@
         },
         "WebsiteUrl": "http://www.ilovethebronx.com/index.php/happenings/tour-de-bronx",
         "RegisterUrl": "",
-        "IsActive": true
-	}					
-		
+        "IsActive": true,
+        "Created" : "2018-05-22"
+	}							
 ]

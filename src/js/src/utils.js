@@ -13,10 +13,12 @@ export function onReady(fn) {
     }
 } 
 
-
 export function getEvents() {
 	return fetch(appSettings.urls.cyclingEvents)
 		.then(response => {
-			return response.json();                            
-		});
+            return response.json();                            			
+        })
+        .catch(e => {
+            console.error(`An error occured: ${e}`);
+        });
 }
