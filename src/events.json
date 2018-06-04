@@ -23,7 +23,7 @@
         },
         "WebsiteUrl": "https://www.granfondonationalseries.com/gran-fondo-highlands/",
         "RegisterUrl": "https://www.bikereg.com/highlands-gfns",
-        "IsActive": true,
+        "IsActive": false,
         "Created" : "2018-05-22"
     },
     {
@@ -38,7 +38,7 @@
             "city": "Long Island"
         },
         "WebsiteUrl": "https://www.n2sbc.org/",
-        "RegisterUrl": "https://www.n2sbc.org/",
+        "RegisterUrl": "https://www.active.com/glenwood-landing-ny/cycling/nassau-to-suffolk-bicycle-challenge-2018?int=",
         "IsActive": true,
         "Created" : "2018-05-22"
     },
