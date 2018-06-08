@@ -145,7 +145,7 @@
             "city": ""
         },
         "WebsiteUrl": "https://www.enynycc.org/",
-        "RegisterUrl": "",
+        "RegisterUrl": "https://www.enynycc.org/#register",
         "IsActive": true,
         "Created" : "2018-05-22"
 	},
