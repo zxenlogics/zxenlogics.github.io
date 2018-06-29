@@ -162,6 +162,20 @@
         "RegisterUrl": "",
         "IsActive": true,
         "Created" : "2018-05-22"
+    },
+    {
+        "Id" : "",
+        "Name": "Twin Light Ride",
+        "Date": "2018-09-30",
+        "IsFavorite" : true,
+        "Location": {
+            "state": "NY",
+            "city": "Staten Island"
+        },
+        "WebsiteUrl": "https://www.bike.nyc/events/twin-lights-ride/",
+        "RegisterUrl": "http://www.imathlete.com/events/2018TLR/register/fsource=Main",
+        "IsActive": true,
+        "Created" : "2018-06-29"
 	},
     {
         "Id" : "",
