@@ -95,7 +95,21 @@
         "RegisterUrl": "",
         "IsActive": true,
         "Created" : "2018-05-22"
-	},
+    },
+    {
+        "Id" : "",
+        "Name": "Lancaster Covered Bridge Classic",
+        "Date": "2018-08-19",
+        "IsFavorite" : true,
+        "Location": {
+            "state": "PA",
+            "city": "Lancaster"
+        },
+        "WebsiteUrl": "https://www.bikereg.com/lcbc",
+        "RegisterUrl": "https://www.bikereg.com/lcbc",
+        "IsActive": true,
+        "Created" : "2018-07-26"
+	},    
 	{
         "Id" : "",
         "Name": "NCC Mount Greylock - Hillclimb Time Trial",
@@ -180,7 +194,7 @@
     {
         "Id" : "",
         "Name": "Tour de Bronx",
-        "Date": "2018-10-00",
+        "Date": "2018-10-28",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
