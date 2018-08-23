@@ -153,6 +153,8 @@
         "Id" : "",
         "Name": "Three Creek Century",
         "Date": " 2018-09-16",
+        "Riders" : 2,
+        "TargetMiles" : 100,        
         "Location": {
             "state": "PA",
             "city": "Newville"
@@ -166,6 +168,8 @@
         "Id" : "",
         "Name": "Escape New York",
         "Date": "2018-09-22",
+        "Riders" : 3,
+        "TargetMiles" : 100,        
         "IsFavorite" : true,
         "Location": {
             "state": "NJ",
@@ -194,6 +198,8 @@
         "Id" : "",
         "Name": "Twin Light Ride",
         "Date": "2018-09-30",
+        "Riders" : 4,
+        "TargetMiles" : 100,        
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
