@@ -148,7 +148,20 @@
         "RegisterUrl": "https://www.eventbrite.com/e/gran-fondo-nj-2018-registration-37128814283",
         "IsActive": true,
         "Created" : "2018-05-22"
-	},	
+    },
+    {
+        "Id" : "",
+        "Name": "Three Creek Century",
+        "Date": " 2018-09-16",
+        "Location": {
+            "state": "PA",
+            "city": "Newville"
+        },
+        "WebsiteUrl": "https://www.harrisburgbicycleclub.org/index.php/hbc-special-events/three-creek-century",
+        "RegisterUrl": "https://www.harrisburgbicycleclub.org/index.php/registration-three-creek",
+        "IsActive": true,
+        "Created" : "2018-08-23"
+	},    	
     {
         "Id" : "",
         "Name": "Escape New York",
