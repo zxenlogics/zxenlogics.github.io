@@ -16,7 +16,7 @@
 	{
         "Id" : "",
         "Name": "Highlands Gran Fondo",
-        "Date": "2018-06-03",
+        "Date": "2018-06-02",
         "Location": {
             "state": "NJ",
             "city": "Butler"
@@ -29,7 +29,7 @@
     {
         "Id" : "",
         "Name": "Nassau to Suffolk (N2S)",
-        "Date": "2018-06-24",
+        "Date": "2019-06-30",
         "Riders" : 3,
         "TargetMiles" : 66,
         "IsFavorite" : true,
@@ -45,7 +45,7 @@
     {
         "Id" : "",
         "Name": "Discover Hudson Valley Ride",
-        "Date": "2018-06-24",
+        "Date": "2019-06-30",
         "Location": {
             "state": "NY",
             "city": "Poughkeepsie"
@@ -58,7 +58,7 @@
     {
         "Id" : "",
         "Name": "Gold Goast Tour",
-        "Date": "2018-07-15",
+        "Date": "2019-07-14",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
