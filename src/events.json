@@ -1,4 +1,17 @@
 [
+     {
+        "Id" : "",
+        "Name": "Highlands Gran Fondo",
+        "Date": "2019-06-02",
+        "Location": {
+            "state": "NJ",
+            "city": "Butler"
+        },
+        "WebsiteUrl": "https://www.granfondonationalseries.com/gran-fondo-highlands/",
+        "RegisterUrl": "https://www.bikereg.com/highlands-gfns",
+        "IsActive": false,
+        "Created" : "2018-05-22"
+    },	
     {
         "Id" : "",
         "Name": "Bloomin Metric",
@@ -10,19 +23,6 @@
         },
         "WebsiteUrl": "https://www.bloominmetric.com/",
         "RegisterUrl": "https://www.bloominmetric.com/",
-        "IsActive": false,
-        "Created" : "2018-05-22"
-	},
-	{
-        "Id" : "",
-        "Name": "Highlands Gran Fondo",
-        "Date": "2019-06-02",
-        "Location": {
-            "state": "NJ",
-            "city": "Butler"
-        },
-        "WebsiteUrl": "https://www.granfondonationalseries.com/gran-fondo-highlands/",
-        "RegisterUrl": "https://www.bikereg.com/highlands-gfns",
         "IsActive": false,
         "Created" : "2018-05-22"
     },
@@ -68,7 +68,7 @@
         "RegisterUrl": "https://www.active.com/greenlawn-ny/cycling/gold-coast-tour-2018",
         "IsActive": true,
         "Created" : "2018-05-22"
-	},
+    },
     {
         "Id" : "",
         "Name": "ZTrek",
