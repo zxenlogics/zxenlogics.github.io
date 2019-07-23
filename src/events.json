@@ -113,7 +113,7 @@
 	{
         "Id" : "",
         "Name": "NCC Mount Greylock - Hillclimb Time Trial",
-        "Date": "2018-09-08",
+        "Date": "2019-09-07",
         "Location": {
             "state": "MA",
             "city": "North Adams"
@@ -139,7 +139,7 @@
     {
         "Id" : "",
         "Name": "Gran Fondo NJ",
-        "Date": " 2018-09-09",
+        "Date": " 2019-09-08",
         "Location": {
             "state": "NJ",
             "city": "Morristown"
@@ -167,7 +167,7 @@
     {
         "Id" : "",
         "Name": "Escape New York",
-        "Date": "2018-09-22",
+        "Date": "2019-09-21",
         "Riders" : 3,
         "TargetMiles" : 100,        
         "IsFavorite" : true,
@@ -183,21 +183,21 @@
     {
         "Id" : "",
         "Name": "Tour of the Hamptons",
-        "Date": "2018-09-23",
+        "Date": "2019-09-22",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
             "city": "Long Island"
         },
-        "WebsiteUrl": "http://www.massparkbikeclub.org/tour-of-the-hamptons-2018/",
-        "RegisterUrl": "",
+        "WebsiteUrl": "http://www.massparkbikeclub.org/",
+        "RegisterUrl": "https://www.bikereg.com/toh",
         "IsActive": true,
         "Created" : "2018-05-22"
     },
     {
         "Id" : "",
         "Name": "Twin Light Ride",
-        "Date": "2018-09-30",
+        "Date": "2019-09-22",
         "Riders" : 4,
         "TargetMiles" : 100,        
         "IsFavorite" : true,
@@ -206,14 +206,14 @@
             "city": "Staten Island"
         },
         "WebsiteUrl": "https://www.bike.nyc/events/twin-lights-ride/",
-        "RegisterUrl": "http://www.imathlete.com/events/2018TLR/register/fsource=Main",
+        "RegisterUrl": "https://www.imathlete.com/#/legacy?url=%2Fevents%2FEventReg%2FEventReg_SelectType.aspx%3FfEID%3D72028%26fNew%3D1%26fsource%3DMain",
         "IsActive": true,
         "Created" : "2018-06-29"
 	},
     {
         "Id" : "",
         "Name": "Tour de Bronx",
-        "Date": "2018-10-28",
+        "Date": "2019-10-27",
         "IsFavorite" : true,
         "Location": {
             "state": "NY",
