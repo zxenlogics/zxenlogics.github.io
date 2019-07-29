@@ -105,10 +105,10 @@
             "state": "PA",
             "city": "Lancaster"
         },
-        "WebsiteUrl": "https://www.bikereg.com/lcbc",
-        "RegisterUrl": "https://www.bikereg.com/lcbc",
+        "WebsiteUrl": "https://coveredbridgeclassic.com/register/",
+        "RegisterUrl": "https://coveredbridgeclassic.com/register/",
         "IsActive": true,
-        "Created" : "2018-07-26"
+        "Created" : "2019-08-18"
 	},    
 	{
         "Id" : "",
@@ -159,10 +159,10 @@
             "state": "PA",
             "city": "Newville"
         },
-        "WebsiteUrl": "https://www.harrisburgbicycleclub.org/index.php/hbc-special-events/three-creek-century",
+        "WebsiteUrl": "https://www.eventbrite.com/e/three-creek-century-2019-tickets-54068820297",
         "RegisterUrl": "https://www.harrisburgbicycleclub.org/index.php/registration-three-creek",
         "IsActive": true,
-        "Created" : "2018-08-23"
+        "Created" : "2019-09-15"
 	},    	
     {
         "Id" : "",
