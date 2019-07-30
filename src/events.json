@@ -223,5 +223,19 @@
         "RegisterUrl": "",
         "IsActive": true,
         "Created" : "2018-05-22"
-	}							
+	},
+    {
+        "Id" : "",
+        "Name": "Tour of the Catskills",
+        "Date": "2019-08-03",
+        "IsFavorite" : true,
+        "Location": {
+            "state": "NY",
+            "city": "Tannersville"
+        },
+        "WebsiteUrl": "https://www.bikereg.com/39845",
+        "RegisterUrl": "",
+        "IsActive": true,
+        "Created" : "2019-07-30"
+	}	
 ]
