@@ -99,7 +99,7 @@
     {
         "Id" : "",
         "Name": "Lancaster Covered Bridge Classic",
-        "Date": "2018-08-19",
+        "Date": "2019-08-18",
         "IsFavorite" : true,
         "Location": {
             "state": "PA",
@@ -152,7 +152,7 @@
     {
         "Id" : "",
         "Name": "Three Creek Century",
-        "Date": " 2018-09-16",
+        "Date": " 2019-09-15",
         "Riders" : 2,
         "TargetMiles" : 100,        
         "Location": {
