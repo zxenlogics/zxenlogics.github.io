@@ -237,5 +237,19 @@
         "RegisterUrl": "",
         "IsActive": true,
         "Created" : "2019-07-30"
+	},
+    {
+        "Id" : "",
+        "Name": "New Hope Ride",
+        "Date": "2019-08-11",
+        "IsFavorite" : true,
+        "Location": {
+            "state": "NJ",
+            "city": "Newark"
+        },
+        "WebsiteUrl": "https://www.bikereg.com/43641",
+        "RegisterUrl": "https://www.bikereg.com/43641",
+        "IsActive": true,
+        "Created" : "2019-08-07"
 	}	
 ]
