@@ -191,7 +191,22 @@
         "RegisterUrl": "https://www.harrisburgbicycleclub.org/index.php/registration-three-creek",
         "IsActive": true,
         "Created" : "2019-09-15"
-	},    	
+	},    
+    {
+        "Id" : "",
+        "Name": "Ride to Montauk",
+        "Date": " 2019-09-15",
+        "Riders" : 2,
+        "TargetMiles" : 100,        
+        "Location": {
+            "state": "NY",
+            "city": "Long Island"
+        },
+        "WebsiteUrl": "https://ridetomontauk.com/",
+        "RegisterUrl": "https://bicycleshows.redpodium.com/2019-ride-to-montauk",
+        "IsActive": true,
+        "Created" : "2019-08-12"
+	},	
     {
         "Id" : "",
         "Name": "Escape New York",
